@@ -3,6 +3,8 @@ const { copy } = require("esbuild-plugin-copy")
 
 const entryPoints = [
     "src/*.html",
+    "src/*.tldrev",
+    "src/*.md",
     "src/index.ts"
 ]
 
@@ -16,7 +18,9 @@ function config(isProduction) {
             ".woff": "file",
             ".eot": "file",
             ".ttf": "file",
-            ".html": "copy"
+            ".html": "copy",
+            ".tldrev": "copy",
+            ".md": "copy"
         },
         plugins: [
             copy({
