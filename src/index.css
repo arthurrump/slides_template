@@ -13,3 +13,45 @@
 .reveal table.noborder td {
     border-bottom: none;
 }
+
+.reveal .controls {
+    --r-link-color: var(--r-main-color);
+}
+
+.reveal .progress {
+    --r-link-color: var(--r-main-color);
+}
+
+.reveal .slide-number {
+    right: unset;
+    left: 8px;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+.reveal .slide-number a {
+    text-decoration: none;
+}
+
+.reveal .slide-number .slide-number-delimiter {
+    margin: 0;
+}
+
+.reveal section.full-height {
+    top: 0;
+    height: 100%;
+    display: flex !important;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: var(--r-block-margin);
+}
+
+.reveal section.full-height > * {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.columns {
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
