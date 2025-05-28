@@ -23,6 +23,7 @@ Reveal.initialize({
         39: "next",
         37: "prev"
     },
+    slideNumber: "h.v",
     scrollActivationWidth: undefined,
     plugins: [ Tldreveal, RevealMarkdown, RevealHighlight, RevealNotes ],
     tldreveal: {
